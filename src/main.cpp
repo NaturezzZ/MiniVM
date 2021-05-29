@@ -139,5 +139,6 @@ int main(int argc, const char *argv[]) {
   else {
     ret = RunEeyore(argp, in_file, os);
   }
+  if (ret) cout << endl << (*ret) % 256 << endl;
   return ret ? *ret : kVMErrorVMIrrelevant;
 }
